@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h1{
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            div{
+                width: 70%;
+                text-align: left;
+                padding: 10px;
+                margin-left: 90px;
+            }
+            .form-control{
+                width: 100px
+            }
+            .message{
+                font-size: x-small;
+                margin-left: 5px;
+                margin-top: 2px;
+                color: grey;
+            }
+            span{
+                color:red
+            }
+            textarea{
+                width: 50%;
+                height: 70px;
+            }
+            .confirmation{
+                margin-left: 70px;
+            }
+            input{
+                height: 25px;
+                margin: 5px;
+            }
+            button{
+              height: 40px;
+              width: 90px;
+              border-radius: 50px; 
+              margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:rgba(95, 147, 160, 0.973);  height:200vh; padding-top:7px;">
+           <div style="background-color: rgb(255, 242, 240); border-radius: 20px;height:200vh  ">
+                 <h1>Appointment Request</h1>
+                 <p>Let us know we can help transform your landscape!</p>
+                 <p style="border-style: solid; border-width: 2px; border-color: grey;"></p>
+                 <form>
+    
+                    <div>
+                        <h2> Full Name<span>*</span> </h2>   
+                        <input style="width: 100px" type="text" placeholder="FirstName" />
+                        <input style="width: 100px" type="text" placeholder="LastName"  >
+                    </div>
+                    <div>
+                        <h3> Phone <span>*</span> </h3>   
+                        <input style="width: 100px" type="text" placeholder="Area Code"/>
+                        <input style="width: 100px" type="text" placeholder="Phone Number" >
+                    </div>
+                    <div>
+                        <h4> Email<span>*</span> </h4>   
+                        <input style="width: 100px" type="text" placeholder="ex: myname@gmail.com" />
+                    </div>
+                    <div>
+                        <h5> Address<span>*</span> </h5>   
+                        <input style="width: 100px" type="text" placeholder="Street Address" />
+                        <input style="width: 130px" type="text" placeholder="Street Address Line2"  >
+                    </div>
+                    <br>
+                    <div>  
+                        <input style="width: 100px" type="text" placeholder="City" />
+                        <input style="width: 100px" type="text" placeholder="State/Province"  >
+                    </div>
+                    <br>
+                    <div>  
+                        <input style="width: 100px" type="text" placeholder="Postal / Zip Code" />
+                        <select>
+                            <option value="Please Select">Please Select Country</option>
+                            <option value="Andhra Pradesh">India</option> 
+                        </select> 
+                    </div>
+
+                    
+                    <div>
+                        <h6> What days work best for you?<span>*</span></h6>
+                        <input type="checkbox" id="day1" name="day1" value="Monday">Monday                    
+                        <input type="checkbox" id="day2" name="day2" value="Tuesday">Tuesday
+                        <input type="checkbox" id="day3" name="day3" value="Wednesday">Wednesday
+                        <input type="checkbox" id="day1" name="day1" value="Thursday">Thursday
+                        <input type="checkbox" id="day2" name="day2" value="Friday">Friday
+                        <input type="checkbox" id="day3" name="day3" value="Saturday">Saturday
+                    </div>
+                    <br>
+                    <div>
+                        <h7>What time works best for you?<span>*</span></h7>
+                        <input type="radio" name="day"  id="dayMorning" value="Morning"  />
+                        <label for="dayMorning">Morning</label>
+                        <input type="radio" name="day" id="dayAfternoon" value="Afternoon" />
+                        <label for="dayMorning">Afternoon</label>
+                        <input type="radio" name="day"  id="dayEvening" value="Morning"  />
+                        <label for="dayEvening">Evening</label>
+                    </div>
+                    <br>
+                   <div>
+                        <h8>Any specific date/time?</h8>
+                        <br>
+                        <input style="width: 60px" type="text" placeholder="Month" /> - 
+                        <input style="width: 60px" type="text" placeholder="Day" /> - 
+                        <input style="width: 60px" type="text" placeholder="Year" /> -  
+                          <!-- <i class="fas fa-calendar"></i> -->
+                         <select>  
+                           <option  value="Please Select">Hour</option>  
+                        </select> 
+                        <select>  
+                            <option  value="Please Select">Min</option>  
+                         </select> 
+                         <select>  
+                            <option  value="Please Select">AM</option>  
+                         </select> 
+                    </div>  
+                    
+                    <br> 
+                    <div>
+                        <h9>What services are you interested in?<span>*</span></h9><br>
+                        <textarea>
+                        </textarea>
+                    </div>  
+                    <div>
+                        <p>
+                            I would like to be notified about promotional services.Please note that we do 
+                            not rent or sell your information to any third parties!<span>*</span>
+                        </p>
+                        <input class="confirmation" type="checkbox" id="confirm"  value="Yes">Yes                   
+                        <input class="confirmation" type="checkbox" id="confirm"  value="No">No
+                    </div>
+                    <div>
+                        <button >Submit</button>
+                    </div>
+                    
+                 </form>
+                
+           </div>
+        </div>
+    </body>
+</html>
