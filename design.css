@@ -1,42 +1,51 @@
 
-.sub-container{
+#sub-container{
     background-color: mediumaquamarine;
     padding: 40px;
 }
-
-
 
 .page-wrapper{
     background-image:url("https://cdn.wallpapersafari.com/82/86/amx9wB.jpg");
     padding: 30px;
 }
 header{
-    color: purple;
-    font-size: larger;
-    font-family:sans-serif;
-    font-weight: bolder;
     text-align: center;
-    text-shadow: gold;
+    font-family:"Roboto";
+    font-size: larger;
+    font-weight: bold;
+    color: purple;
+
 }
 .summary{
     text-align: center;
     font-weight: bolder;
-    background-color:palegoldenrod
+    background-color:silver;
+}
+.explanation{
+    background-color: silver;
+}
+h2{
+    border-style: dotted;
+    border-width: 1px;
 }
 h3{
-    color:red;
-    font-size: 23px;
+    font-size: 25px;
+    font-family:"serif";
     font-weight: bold;
-    margin-left: 9px;
+    color:red;
+    margin-left: 10px;
+    margin-bottom: 10px;
     text-decoration: underline;
 }
 p{
     color: black;
-    font-size: 17px;
-    margin-left: 30px;
+    font-size: 18px;
+    padding: 16px;
+    margin-left: 26px;
+    margin-bottom: 5px;
 }
 
-/* Hover selector */
+/* Hover selector which changes for every action */
 p:hover {
     background-color: rgb(49, 170, 207);
 }
@@ -46,26 +55,34 @@ abbr{
 }
 
 
- /* Group selector */
-p {
-    padding: 16px;
-}
 
+/*For Responsive media queries */
 
 @media screen and (min-width: 500px) {
     body {
-        background-color: black;
+        background-color: darkgreen;
+        padding: 13px;
+    }
+    header{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
     }
 }
+
+
+
 @media screen and (max-width: 400px) {
-    header{
-        font-size: 16px;
-        text-align: center;
-    }
     body {
-        font-size: 20px;
-     }
+        font-size: 22px;
+        background-color: black;
+    }
+    header{
+        text-align: center;
+        font-size: 25px;
+    }
     p{
-        font-size: 15px;
+        font-size: 23px;
     }
 }
