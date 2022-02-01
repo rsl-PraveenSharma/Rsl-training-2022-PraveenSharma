@@ -1,0 +1,71 @@
+
+.sub-container{
+    background-color: mediumaquamarine;
+    padding: 40px;
+}
+
+
+
+.page-wrapper{
+    background-image:url("https://cdn.wallpapersafari.com/82/86/amx9wB.jpg");
+    padding: 30px;
+}
+header{
+    color: purple;
+    font-size: larger;
+    font-family:sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: gold;
+}
+.summary{
+    text-align: center;
+    font-weight: bolder;
+    background-color:palegoldenrod
+}
+h3{
+    color:red;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 9px;
+    text-decoration: underline;
+}
+p{
+    color: black;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+/* Hover selector */
+p:hover {
+    background-color: rgb(49, 170, 207);
+}
+
+abbr{
+    color:green;
+}
+
+
+ /* Group selector */
+p {
+    padding: 16px;
+}
+
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: black;
+    }
+}
+@media screen and (max-width: 400px) {
+    header{
+        font-size: 16px;
+        text-align: center;
+    }
+    body {
+        font-size: 20px;
+     }
+    p{
+        font-size: 15px;
+    }
+}
